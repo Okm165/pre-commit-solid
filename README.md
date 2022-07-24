@@ -13,7 +13,7 @@
       - id: prettier
 ```
 
-## This is my local hook change <path> if needed
+## This is my local hook change path if needed
 
 ```yaml
 - id: tsc
