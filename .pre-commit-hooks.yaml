@@ -4,3 +4,15 @@
   entry: npx --prefix frontend/ tsc -b frontend/ 
   language: system
   pass_filenames: false
+- id: eslint
+  name: Typescript linter
+  description: js ts jsx tsx linter.
+  entry: npx --prefix frontend/ eslint frontend/ --ext .js,.ts,.tsx,.jsx
+  language: system
+  pass_filenames: false
+- id: prettier
+  name: Typescript formatter
+  description: Formatter.
+  entry: npx --prefix frontend/ prettier --config frontend/.prettierrc.json --loglevel log -cu frontend/.
+  language: system
+  pass_filenames: false
