@@ -2,18 +2,15 @@
 
 [Rust](https://www.rust-lang.org) tools package for [pre-commit](https://pre-commit.com).
 
-## Using rust tools with pre-commit
+## Using solid tools with pre-commit
 
 ```yaml
-- repo: https://github.com/Okm165/pre-commit-rust.git
+- repo: https://github.com/Okm165/pre-commit-solid.git
     rev: master
     hooks:
-      - id: cargo-check
-      - id: cargo-clippy
-        args:
-          - "--fix"
-          - "--allow-dirty"
-      - id: cargo-fmt
+      - id: tsc
+      - id: eslint
+      - id: prettier
 ```
 
 ## Using rust tools with pre-commit (specify path to Cargo.toml)

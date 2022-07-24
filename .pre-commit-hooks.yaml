@@ -1,8 +1,9 @@
 - id: tsc
   name: Typescript compiler
   description: Typescript compiler check.
-  entry: npx --prefix frontend/ tsc -b frontend/ 
+  entry: npx --prefix --myarg tsc -b --myarg 
   language: system
+  args: [--myarg]
   pass_filenames: false
 - id: eslint
   name: Typescript linter
