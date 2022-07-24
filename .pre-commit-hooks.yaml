@@ -3,7 +3,7 @@
   description: Typescript compiler check.
   entry: npx --prefix frontend/ tsc -b frontend/ 
   language: system
-  pass_filenames: false
+  pass_filenames: true
 - id: eslint
   name: Typescript linter
   description: js ts jsx tsx linter.
