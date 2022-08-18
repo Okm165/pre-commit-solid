@@ -2,17 +2,14 @@
   name: Typescript compiler
   description: Typescript compiler check.
   language: system
-  exclude: node_modules
   entry: tsc
 - id: eslint
   name: Typescript linter
   description: Typescript linter check.
   language: system
-  exclude: node_modules
   entry: eslint
 - id: prettier
   name: Typescript formatter
   description: Typescript formatter check.
   language: system
-  exclude: node_modules
   entry: prettier
