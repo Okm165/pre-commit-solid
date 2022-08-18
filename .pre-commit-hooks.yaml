@@ -1,18 +1,22 @@
 - id: tsc
   name: Typescript compiler
   description: Typescript compiler check.
-  language: system
   entry: tsc
-  args: ["--"]
+  language: node
+  'types': [js, ts, tsx, jsx]
+  args: []
 - id: eslint
   name: Typescript linter
   description: Typescript linter check.
   language: system
   entry: eslint
-  args: ["--"]
+  language: node
+  'types': [js, ts, tsx, jsx]
+  args: []
 - id: prettier
   name: Typescript formatter
   description: Typescript formatter check.
-  language: system
   entry: prettier
-  args: ["--"]
+  language: node
+  'types': [js, ts, tsx, jsx]
+  args: []
