@@ -2,6 +2,7 @@
   name: Typescript compiler
   description: Typescript compiler check.
   entry: tsc
+  language: system
 - id: eslint
   name: Typescript linter
   description: Typescript linter check.
@@ -11,3 +12,4 @@
   name: Typescript formatter
   description: Typescript formatter check.
   entry: prettier
+  language: system
