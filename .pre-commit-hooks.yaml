@@ -1,18 +1,15 @@
 - id: tsc
   name: Typescript compiler
   description: Typescript compiler check.
-  entry: npx --prefix frontend/ tsc -b frontend/ 
   language: system
-  pass_filenames: false
+  exclude: node_modules
 - id: eslint
   name: Typescript linter
-  description: js ts jsx tsx linter.
-  entry: npx --prefix frontend/ eslint frontend/ --ext .js,.ts,.tsx,.jsx
+  description: Typescript linter check.
   language: system
-  pass_filenames: false
+  exclude: node_modules
 - id: prettier
   name: Typescript formatter
-  description: Formatter.
-  entry: npx --prefix frontend/ prettier --config frontend/.prettierrc.json --loglevel log -cu frontend/.
+  description: Typescript formatter check.
   language: system
-  pass_filenames: false
+  exclude: node_modules
