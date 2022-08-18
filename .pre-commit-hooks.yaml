@@ -3,13 +3,16 @@
   description: Typescript compiler check.
   language: system
   entry: tsc
+  args: ["--"]
 - id: eslint
   name: Typescript linter
   description: Typescript linter check.
   language: system
   entry: eslint
+  args: ["--"]
 - id: prettier
   name: Typescript formatter
   description: Typescript formatter check.
   language: system
   entry: prettier
+  args: ["--"]
