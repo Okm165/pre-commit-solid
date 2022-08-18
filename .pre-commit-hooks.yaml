@@ -3,17 +3,14 @@
   description: Typescript compiler check.
   entry: tsc
   language: node
-  args: []
 - id: eslint
   name: Typescript linter
   description: Typescript linter check.
   language: system
   entry: eslint
   language: node
-  args: []
 - id: prettier
   name: Typescript formatter
   description: Typescript formatter check.
   entry: prettier
   language: node
-  args: []
