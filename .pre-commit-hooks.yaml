@@ -3,7 +3,6 @@
   description: Typescript compiler check.
   entry: tsc
   language: node
-  'types': [js, ts, tsx, jsx]
   args: []
 - id: eslint
   name: Typescript linter
@@ -11,12 +10,10 @@
   language: system
   entry: eslint
   language: node
-  'types': [js, ts, tsx, jsx]
   args: []
 - id: prettier
   name: Typescript formatter
   description: Typescript formatter check.
   entry: prettier
   language: node
-  'types': [js, ts, tsx, jsx]
   args: []
