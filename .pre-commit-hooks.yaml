@@ -1,16 +1,16 @@
 - id: tsc
   name: Typescript compiler
   description: Typescript compiler check.
-  entry: tsc -b ./
+  entry: cd frontend/ && npx tsc -b ./
   language: system
   pass_filenames: false
 - id: eslint
   name: Typescript linter
   description: Typescript linter check.
   language: system
-  entry: eslint ./ --ext js,ts,jsx,tsx
+  entry: cd frontend/ && npx eslint ./ --ext js,ts,jsx,tsx
 - id: prettier
   name: Typescript formatter
   description: Typescript formatter check.
-  entry: prettier -w ./
+  entry: cd frontend/ && npx prettier -w ./
   language: system
