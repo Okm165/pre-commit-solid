@@ -1,4 +1,4 @@
- id: tsc
+- id: tsc
   name: Typescript compiler
   description: Typescript compiler check.
   entry: npx --prefix frontend/ tsc -b frontend/
