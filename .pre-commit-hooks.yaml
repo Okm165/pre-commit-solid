@@ -1,18 +1,16 @@
 - id: tsc
   name: Typescript compiler
   description: Typescript compiler check.
-  entry: tsc -b 
+  entry: tsc -b ./
   language: system
-  types_or: [javascript, jsx, ts, tsx]
+  pass_filenames: false
 - id: eslint
   name: Typescript linter
   description: Typescript linter check.
   language: system
-  entry: eslint
-  types_or: [javascript, jsx, ts, tsx]
+  entry: eslint ./ --ext js,ts,jsx,tsx
 - id: prettier
   name: Typescript formatter
   description: Typescript formatter check.
-  entry: prettier -w 
+  entry: prettier -w ./
   language: system
-  types_or: [javascript, jsx, ts, tsx]
